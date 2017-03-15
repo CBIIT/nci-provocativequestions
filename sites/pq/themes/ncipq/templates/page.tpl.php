@@ -68,7 +68,7 @@
       <section class="row <?php print $alt_header_classes; ?>">
         <div class="large-12 columns center-head-block">
           <?php if ($linked_logo): print $linked_logo; endif; ?>
-          <a href="http://cssi.cancer.gov/"><img src="/sites/pq/themes/ncipq/images/cssi-logo.png" alt="Center for Strategic Scientific Initiatives"></a>
+          <a href="http://cssi.cancer.gov/"><img src="/<?php echo path_to_theme(); ?>/images/cssi-logo.png" alt="Center for Strategic Scientific Initiatives"></a>
           <?php if ($site_name): ?>
           <?php if ($title): ?>
           <div id="site-name" class="element-invisible">
