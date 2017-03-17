@@ -29,7 +29,6 @@ main { background-color: #FFFFFF; padding: 20px 50px; margin: 20px 0 50px 0; }
 .front .main-content .block .block-headline { padding: 0 20px; background: #3a76b5 url('../images/title-bg.jpg') right top no-repeat; }
 .sidebar .block .content { padding: 10px;}
 .front .main-content .block .content { padding: 20px 20px 20px 20px;}
-.sidebar img { width: 100%; }
 
 .not-front main .main-content-wrapper { margin-bottom: 30px; }
 .not-front main .main-content .page-title-wrapper { padding: 0 20px; margin: 0 0 20px 0; background: #3a76b5 url('../images/title-bg.jpg') right top no-repeat; color:#FFFFFF; height:65px; }
