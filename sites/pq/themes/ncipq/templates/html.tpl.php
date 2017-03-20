@@ -83,5 +83,8 @@
 	ga('create', 'UA-7993733-8', 'auto');
 	ga('send', 'pageview');
   </script>
+  
+<script language="JavaScript" type="text/javascript" src="https://static.cancer.gov/webanalytics/wa_cssi_pageload.js"></script>
+
 </body>
 </html>
