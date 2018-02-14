@@ -48,6 +48,7 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
 <head>
+  <script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-71a449a40c1fe9d8db22f15bc8fd2e3a768e8871.js"></script>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <link href='//fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
@@ -85,6 +86,6 @@
   </script>
   
 <script language="JavaScript" type="text/javascript" src="https://static.cancer.gov/webanalytics/wa_cssi_pageload.js"></script>
-
+<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 </html>
