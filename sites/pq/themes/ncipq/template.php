@@ -287,6 +287,35 @@ function ncipq_preprocess_page(&$variables) {
     $variables['title'] = '';
     unset($variables['page']['content']['system_main']['default_message']);
   }
+	
+	
+  // Convenience variables
+  if (!empty($variables['page']['sidebar_first'])){
+    $left = $variables['page']['sidebar_first'];
+  }
+
+  if (!empty($variables['page']['sidebar_second'])) {
+    $right = $variables['page']['sidebar_second'];
+  }
+  // Dynamic sidebars
+  if (!empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'large-5 push-4';
+    $variables['sidebar_first_grid'] = 'large-4 pull-5';
+    $variables['sidebar_sec_grid'] = 'large-4';
+  } elseif (empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'large-8';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = 'large-4';
+  } elseif (!empty($left) && empty($right)) {
+    $variables['main_grid'] = 'large-8 push-4';
+    $variables['sidebar_first_grid'] = 'large-4 pull-8';
+    $variables['sidebar_sec_grid'] = '';
+  } else {
+    $variables['main_grid'] = 'large-12';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = '';
+  }
+	
 }
 
 

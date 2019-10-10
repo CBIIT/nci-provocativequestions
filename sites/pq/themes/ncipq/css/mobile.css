@@ -9,14 +9,8 @@ main { padding: 10px 0; }
 .not-front .row.full-width.main { position: relative; top: auto; }
 .row.full-width-slider { padding: 0; top: 0; }
 .md-arrow-left, .md-arrow-right { top: 23%; }
-.slogan-banner-block p { font-size: 1.1em; }
+.slogan-banner-block p { font-size: 1em; }
 .top-header-links { width: 100%; text-align: right; }
 .sidebar img { width: auto !important; }
 	
-} /* max-width 1025px, large screens, mobile-only styles, use when QAing mobile issues */
-
-@media only screen and (max-width: 760px) { 
-
-h1.title { font-size: 3.5vw; }
-
 }

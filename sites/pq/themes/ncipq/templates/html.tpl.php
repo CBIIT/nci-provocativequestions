@@ -48,18 +48,24 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
 <head>
-  <script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-5b9e3ac44703470653bb9ed571575dc0232775ef.js"></script>
+  <script src="//assets.adobedtm.com/f1bfa9f7170c81b1a9a9ecdcc6c5215ee0b03c84/satelliteLib-71a449a40c1fe9d8db22f15bc8fd2e3a768e8871.js"></script>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <link href='//fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
+	
+  <script src='//code.jquery.com/jquery-1.10.3.js'></script>
+  <script src='//code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
   <!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div class="skip-link">

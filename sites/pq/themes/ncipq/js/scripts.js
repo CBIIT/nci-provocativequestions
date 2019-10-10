@@ -11,8 +11,8 @@
 //})(jQuery, Drupal);
 
 jQuery(document).ready(function ($) {
-	
-	$('.footer .menu li.leaf:not(:last)').after('<li class="footer-divider">|</li>');
+
+	$('.footer .menu li.leaf:not(.last)').after('<li class="footer-divider">|</li>');
 	
 	// Linkify links
 	$('.field-name-field-external-link .field-item').each(function(){
@@ -32,6 +32,20 @@ jQuery(document).ready(function ($) {
 		jQuery(this).closest('tr').next().find('.abstract').toggle();
 	});
 	
+
+    //initialize accordion
+    var icons = {
+      header: "ui-icon-circle-plus",
+      activeHeader: "ui-icon-circle-minus"
+    };
+    jQuery( "#accordion" ).accordion({
+		header: "h3",
+		active: false,
+		collapsible: true,
+		heightStyle: "content",
+		icons: icons,
+	});
+
 		
 });
 

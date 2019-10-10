@@ -83,11 +83,51 @@
           <?php endif; ?>
         </div>
         <div class="large-12 columns navigation-block">
+          <?php if (!empty($page['header'])): ?>
+          <?php print render($page['header']); ?>
+          <?php endif; ?>
+        </div>
+
+    <div class="large-4 columns left-head-block">
+      <?php if ($linked_logo): print $linked_logo; endif; ?>
+
+      <?php if ($site_name): ?>
+        <?php if ($title): ?>
+          <div id="site-name" class="element-invisible">
+            <strong>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </strong>
+          </div>
+        <?php else: /* Use h1 when the content title is empty */ ?>
+          <h1 id="site-name">
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          </h1>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if ($site_slogan): ?>
+        <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
+      <?php endif; ?>
+
+      <?php if ($alt_main_menu): ?>
+        <nav id="main-menu" class="navigation" role="navigation">
+          <?php print ($alt_main_menu); ?>
+        </nav> <!-- /#main-menu -->
+      <?php endif; ?>
+
+      <?php if ($alt_secondary_menu): ?>
+        <nav id="secondary-menu" class="navigation" role="navigation">
+          <?php print $alt_secondary_menu; ?>
+        </nav> <!-- /#secondary-menu -->
+      <?php endif; ?>
+    </div>
+    <div class="large-8 columns right-head-block">
           <?php if (!empty($page['navigation'])): ?>
           <?php print render($page['navigation']); ?>
           <?php endif; ?>
-        </div>
-        </div>
+    </div>
+		  
+		  
       </section>
       <?php endif; ?>
       <!-- End title, slogan and menu --> 
